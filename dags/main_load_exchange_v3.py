@@ -100,7 +100,7 @@ def load(records, schema, table):
     logging.info("Load done")
 
 with DAG(
-    dag_id='fork_load_exchange_v3',
+    dag_id='main_load_exchange_v3',
     start_date=datetime(2024, 6, 9),
     schedule='1 0 * * *',
     max_active_runs=1,
